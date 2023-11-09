@@ -1,5 +1,6 @@
 #include <MapleStar.h>
 
+
 class Sandbox : public MapleStar::Application
 {
 public:
