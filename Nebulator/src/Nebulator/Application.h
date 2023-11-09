@@ -1,6 +1,6 @@
 #pragma once
 
-namespace MapleStar {
+namespace Nebulator {
 
     class Application
     {

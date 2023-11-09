@@ -1,7 +1,7 @@
-#include <MapleStar.h>
+#include <Nebulator.h>
 
 
-class Sandbox : public MapleStar::Application
+class Sandbox : public Nebulator::Application
 {
 public:
     Sandbox()
@@ -15,7 +15,7 @@ public:
     }
 };
 
-MapleStar::Application* MapleStar::CreateApplication()
+Nebulator::Application* Nebulator::CreateApplication()
 {
     return new Sandbox();
 }

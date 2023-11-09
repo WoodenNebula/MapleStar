@@ -1,6 +1,8 @@
 #include "Application.h"
 
-namespace MapleStar {
+#include "Log.h"
+
+namespace Nebulator {
 
     Application::Application() {}
 
@@ -8,6 +10,7 @@ namespace MapleStar {
 
     void Application::Run()
     {
+        NR_INFO("STARTED APPLICATION");
         while (true);
     }
 
