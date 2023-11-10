@@ -14,12 +14,6 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 
 
-group "Core"
-    include "Nebulator"
+include "Nebulator"
 
-group ""
-
-group "App"
-    include "Sandbox"
-
-group ""
+include "Sandbox"

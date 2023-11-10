@@ -2,10 +2,10 @@
 
 // For use by client side (Applications using Nebulator)
 
-#include "Nebulator\Application.h"
-#include "Nebulator\Log.h"
+#include "Nebulator/Core/Application.h"
+#include "Nebulator/Core/Log.h"
 
 
 //---ENTRY POINT-----------
-#include "Nebulator\EntryPoint.h"
+#include "Nebulator/Core/EntryPoint.h"
 //-------------------------

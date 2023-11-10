@@ -20,6 +20,11 @@ project "Nebulator"
         "vendor/spdlog/include",
     }
 
+
+    pchheader "nrpch.h"
+    pchsource "src/nrpch.cpp"
+
+
     filter "system:windows"
         systemversion "latest"
 
