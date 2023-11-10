@@ -1,7 +1,6 @@
 #include "nrpch.h"
+#include "Core.h"
 #include "Application.h"
-
-#include "Log.h"
 
 namespace Nebulator {
 
@@ -12,6 +11,8 @@ namespace Nebulator {
     void Application::Run()
     {
         NR_INFO("STARTED APPLICATION");
+
+
         while (true);
     }
 
