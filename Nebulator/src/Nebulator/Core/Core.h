@@ -16,6 +16,7 @@
 
 #endif // NR_DEBUG
 
+#define BIT(x) (1 << x)
 
 #include "Nebulator/Core/Log.h"
 #include "Nebulator/Core/Assert.h"
