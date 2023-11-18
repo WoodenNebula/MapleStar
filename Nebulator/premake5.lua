@@ -18,8 +18,16 @@ project "Nebulator"
     {
         "src",  
         "vendor/spdlog/include",
-    }
+        "%{IncludeDirs.GLFW}",
+        "%{IncludeDirs.Glad}"
 
+    }
+    links
+    {
+        "GLFW",
+        "Glad",
+        "opengl32.lib"
+    }
 
     pchheader "nrpch.h"
     pchsource "src/nrpch.cpp"
@@ -30,7 +38,8 @@ project "Nebulator"
 
         defines
         {
-            "NR_PLATFORM_WINDOWS"
+            "NR_PLATFORM_WINDOWS",
+            "GLFW_INCLUDE_NONE"
         }
 
     filter "configurations:Debug"

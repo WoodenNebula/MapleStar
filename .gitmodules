@@ -1,3 +1,6 @@
 [submodule "Nebulator/vendor/spdlog"]
 	path = Nebulator/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Nebulator/vendor/glfw"]
+	path = Nebulator/vendor/glfw
+	url = https://github.com/glfw/glfw

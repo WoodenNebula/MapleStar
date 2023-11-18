@@ -52,7 +52,7 @@ namespace Nebulator
     class EventDispatcher
     {
         template<typename T>
-        using EventCbFn = std::function<bool(T&)>;
+        using EventCallbackFunc = std::function<bool(T&)>;
 
     public:
         EventDispatcher(Event& e)
@@ -60,7 +60,7 @@ namespace Nebulator
 
 
         template<typename T>
-        bool Dispatch(EventCbFn<T> cbFunc)
+        bool Dispatch(EventCallbackFunc<T> cbFunc)
         {
             if (m_Event.GetEventType() == T::GetStaticType() )
             {
